@@ -15,4 +15,4 @@ Yerel adres: http://localhost:5173/sarica/
 
 ## Yayın
 
-`main` dalına yapılan her push, GitHub Actions ile derlenip `gh-pages` dalına atılır ve GitHub Pages'te yayınlanır.
+`main` dalına yapılan her push, GitHub Actions ile derlenip doğrudan GitHub Pages'e yayınlanır.
