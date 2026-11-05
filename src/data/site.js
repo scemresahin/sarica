@@ -29,7 +29,7 @@ export const contact = {
   address: 'Gaziler Mh. Issıkgöl Cd. Gökçe Vizyon Plaza No: 138/67 Kat:4 Gebze-Kocaeli, TR',
   addressShort: 'Gaziler Mh. Issıkgöl Cd. Gökçe Vizyon Plaza No: 138/67 Kat:4 Gebze-Kocaeli',
   hours: 'Pazartesi – Cuma, 09:00 – 18:00',
-  whatsapp: 'https://wa.me/902625001001',
+  whatsapp: 'https://wa.me/905327190529',
   mapEmbed:
     'https://maps.google.com/maps?q=Iss%C4%B1kg%C3%B6l%20Cd.%20No%3A138%2C%20Gaziler%2C%20Gebze%2C%20Kocaeli&hl=tr&z=16&output=embed',
 }
