@@ -2,7 +2,7 @@
 
 Sarıca Mühendislik kurumsal web sitesi — React + Vite.
 
-Canlı: https://scemresahin.github.io/sarica/
+Canlı: https://saricamuhendislik.com
 
 ## Geliştirme
 
@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Yerel adres: http://localhost:5173/sarica/
+Yerel adres: http://localhost:5173/
 
 ## Yayın
 
