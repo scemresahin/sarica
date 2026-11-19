@@ -1,6 +1,12 @@
 const paths = {
   bolt: <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />,
   check: <path d="M5 12.5l4.5 4.5L19 7.5" />,
+  copy: (
+    <>
+      <rect x="9" y="9" width="12" height="12" rx="2" />
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+    </>
+  ),
   plus: <path d="M12 5v14M5 12h14" />,
   minus: <path d="M5 12h14" />,
   arrowUpRight: <path d="M7 17 17 7M8 7h9v9" />,

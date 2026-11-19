@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
 import { Eyebrow, MapCard, PageHero } from '../components/Blocks'
 import { contact, images } from '../data/site'
@@ -47,6 +48,12 @@ export default function Contact() {
               {c.href ? <a href={c.href}>{c.value}</a> : <span>{c.value}</span>}
             </div>
           ))}
+        </div>
+        <div className="billing-link">
+          <Link to="/cari" className="btn btn--outline btn--sm">
+            <Icon name="file" size={14} />
+            Fatura ve Banka Bilgileri
+          </Link>
         </div>
       </div>
       <section className="section section--contact">

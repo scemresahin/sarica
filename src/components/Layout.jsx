@@ -3,16 +3,10 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import Icon from './Icon'
 import { nav } from '../data/site'
 
-export function Logo({ dark = false, onClick }) {
+export function Logo({ onClick }) {
   return (
-    <Link to="/" onClick={onClick} className={`logo${dark ? ' logo--dark' : ''}`} aria-label="Sarıca Mühendislik ana sayfa">
-      <span className="logo__mark">
-        <Icon name="bolt" size={20} stroke={0} fill="currentColor" />
-      </span>
-      <span className="logo__text">
-        <strong>SARICA</strong>
-        <small>MÜHENDİSLİK</small>
-      </span>
+    <Link to="/" onClick={onClick} className="logo" aria-label="Sarıca Mühendislik ana sayfa">
+      <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Sarıca Mühendislik" width="160" height="47" />
     </Link>
   )
 }

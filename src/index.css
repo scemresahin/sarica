@@ -233,33 +233,11 @@ p {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: var(--white);
 }
-.logo__mark {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  background: var(--yellow);
-  color: var(--dark);
-  display: grid;
-  place-items: center;
-}
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-.logo__text strong {
-  font-size: 21px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-.logo__text small {
-  font-size: 7.5px;
-  letter-spacing: 0.32em;
-  margin-top: 3px;
-  opacity: 0.85;
+.logo img {
+  display: block;
+  width: auto;
+  height: 42px;
 }
 
 /* ---------- Home hero ---------- */
@@ -999,6 +977,179 @@ p {
   color: #2f9e55;
 }
 
+/* ---------- Billing (/cari) ---------- */
+.btn--outline {
+  border-color: var(--line);
+  color: var(--text);
+  background: var(--white);
+}
+.btn--outline:hover {
+  border-color: var(--yellow);
+  background: var(--yellow-soft);
+}
+.billing-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.billing-hero {
+  color: var(--white);
+  background-image: linear-gradient(180deg, rgba(36, 50, 62, 0.55), rgba(36, 50, 62, 0.8)), var(--hero-img);
+  background-size: cover;
+  background-position: center;
+  min-height: 560px;
+  padding-top: calc(var(--header-h) + 150px);
+}
+.billing-hero__title {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+.billing {
+  position: relative;
+  margin-top: -180px;
+  padding-bottom: 72px;
+}
+.billing__inner {
+  max-width: calc(760px + var(--gutter) * 2);
+  display: grid;
+  gap: 16px;
+}
+.billing-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: 30px 32px 32px;
+}
+.billing-card .eyebrow {
+  margin-bottom: 18px;
+}
+.billing-card__title {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+}
+.billing-card__address {
+  margin-top: 22px;
+  font-size: 13.5px;
+  color: var(--body);
+}
+.tax-info {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 13.5px;
+}
+.tax-info > div {
+  display: flex;
+  gap: 6px;
+}
+.tax-info dt {
+  color: var(--body);
+}
+.tax-info dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+.banks {
+  margin-top: 26px;
+  display: grid;
+  gap: 34px;
+}
+.bank-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.bank-logo--garanti {
+  color: #10914a;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.bank-logo--isbank {
+  color: #1d3c8f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.bank-logo--isbank b {
+  font-size: 22px;
+  margin: 0 2px;
+}
+.bank-logo--vakifbank {
+  color: #f6c400;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  gap: 6px;
+}
+.bank__branch {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--yellow-2);
+}
+.bank__accounts {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.iban-row {
+  display: grid;
+  grid-template-columns: 28px 80px auto auto;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 13.5px;
+}
+.iban-row__symbol {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--yellow-soft);
+  color: var(--yellow-2);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+.iban-row__label {
+  color: var(--body);
+}
+.iban-row__iban {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.iban-row__copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 6px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.iban-row__copy:hover {
+  background: var(--bg-muted);
+  color: var(--text);
+}
+
 /* ---------- Services grid ---------- */
 .service-grid {
   display: grid;
@@ -1676,5 +1827,36 @@ p {
   }
   .footer__bottom {
     flex-direction: column;
+  }
+  .billing-hero {
+    min-height: 420px;
+    padding-top: calc(var(--header-h) + 90px);
+  }
+  .billing {
+    margin-top: -200px;
+    padding-bottom: 56px;
+  }
+  .billing-card {
+    padding: 24px 18px;
+  }
+  .billing-card__title {
+    font-size: 18px;
+  }
+  .tax-info {
+    flex-direction: column;
+  }
+  .iban-row {
+    grid-template-columns: 28px 1fr auto;
+    row-gap: 2px;
+  }
+  .iban-row__iban {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    white-space: normal;
+  }
+  .iban-row__copy {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 0;
   }
 }

@@ -5,6 +5,7 @@ import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Calculations from './pages/Calculations'
+import Billing from './pages/Billing'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="kurumsal" element={<About />} />
         <Route path="iletisim" element={<Contact />} />
         <Route path="hesaplamalar" element={<Calculations />} />
+        <Route path="cari" element={<Billing />} />
         <Route path="*" element={<Home />} />
       </Route>
     </Routes>
